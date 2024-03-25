@@ -3,6 +3,11 @@ name = "bevy_prototypes"
 version = "0.1.0"
 edition = "2021"
 
+
+[workspace]
+
+members = []
+
 # Enable a small amount of optimization in debug mode
 [profile.dev]
 opt-level = 1
@@ -14,4 +19,4 @@ opt-level = 3
 [dependencies]
 bevy = "0.13.1"
 bevy-inspector-egui = "0.23.4"
-bevy_panorbit_camera = { version = "0.16.1", features = ["bevy_egui"] }
+bevy_panorbit_camera = { version = "0.17.0", features = ["bevy_egui"] }
