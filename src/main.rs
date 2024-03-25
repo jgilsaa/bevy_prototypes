@@ -1,9 +1,8 @@
-use bevy::{prelude::*, render::camera::ScalingMode};
+use bevy::prelude::*;
 use bevy_inspector_egui::quick::WorldInspectorPlugin;
 use bevy_panorbit_camera::{PanOrbitCamera, PanOrbitCameraPlugin};
 
-mod grid;
-use grid::GridPlugin;
+use bevy_grid::GridPlugin;
 
 fn main() {
     App::new()
