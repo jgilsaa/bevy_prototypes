@@ -5,7 +5,7 @@ edition = "2021"
 
 
 [workspace]
-members = ["crates/bevy_grid"]
+members = ["crates/bevy_grid", "games/flappybird"]
 
 # Enable a small amount of optimization in debug mode
 [profile.dev]
@@ -22,3 +22,4 @@ bevy_panorbit_camera = { version = "0.17.0", features = ["bevy_egui"] }
 
 # Internal crates
 bevy_grid = { path = "crates/bevy_grid" }
+flappybird = { path = "games/flappybird" }
