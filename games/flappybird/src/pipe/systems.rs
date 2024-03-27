@@ -2,8 +2,8 @@ use bevy::prelude::*;
 use rand::Rng;
 
 use crate::{
-    bird::component::Bird, collision::Collider, game_assets::GameAssets, PIPE_GAP, PIPE_SIZE,
-    WINDOW_WIDTH,
+    bird::component::Bird, collision::Collider, game_assets::GameAssets, DespawnOnReset, PIPE_GAP,
+    PIPE_SIZE, WINDOW_WIDTH,
 };
 
 use super::components::{ApproachingPipe, Pipe, PipeSpawner};
@@ -31,6 +31,7 @@ pub fn spawn_pipes(
         },
         Pipe,
         Collider { size: PIPE_SIZE },
+        DespawnOnReset,
         Name::from("Pipe"),
     ));
 
@@ -46,6 +47,7 @@ pub fn spawn_pipes(
         },
         Pipe,
         Collider { size: PIPE_SIZE },
+        DespawnOnReset,
         Name::from("Pipe"),
     ));
 }

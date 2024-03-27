@@ -1,6 +1,6 @@
 use bevy::prelude::*;
 
-use crate::{game_assets::GameAssets, WINDOW_HEIGHT};
+use crate::{game_assets::GameAssets, DespawnOnReset, WINDOW_HEIGHT};
 
 use super::component::Bird;
 
@@ -12,6 +12,7 @@ pub fn spawn_bird(mut commands: Commands, game_assets: Res<GameAssets>) {
             ..default()
         },
         Bird::default(),
+        DespawnOnReset,
         Name::from("Bird"),
     ));
 }
