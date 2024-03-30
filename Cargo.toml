@@ -5,7 +5,7 @@ edition = "2021"
 
 
 [workspace]
-members = ["crates/bevy_grid", "games/flappybird"]
+members = ["crates/bevy_grid", "games/flappybird", "games/rts"]
 
 # Enable a small amount of optimization in debug mode
 [profile.dev]
